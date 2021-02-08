@@ -14,11 +14,13 @@ public class Blink : MonoBehaviour
     {
         StartCoroutine("blinking");
     }
-  
- IEnumerator blinking()
+
+    IEnumerator blinking()
     {
         GameObject marker = Instantiate(markerPrefab, markerPoint.position, Quaternion.identity);
         yield return new WaitForSeconds(3);
+
+        //timmy was an average kid, who no one ever loved
     }
 }
 
